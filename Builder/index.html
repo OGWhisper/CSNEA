@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>
+        Pathfinder
+    </title>
+
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+    <script src="./index.js"></script>
+    <button style="left: 0px; top: 0px;" onclick="window.location.replace(`../index.html`)">Home</button>
+    <button style="left: 0px; top: 50px;" onclick="saveSchema();">Save</button>
+    <button style="left: 0px; top: 100px;"
+onclick="if(prompted){window.location.replace(`../Solver/index.html?id=${new URLSearchParams(window.location.search).get('id')}`)} else{prompted=true; alert('REMEMBER TO SAVE!')}">Solve</button>
+</body>
+
+</html>

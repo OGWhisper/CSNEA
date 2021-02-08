@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>
+        Pathfinder
+    </title>
+
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+
+    <button style="left: 0px; top: 0px;" onclick="window.location.replace('../index.html')">Home</button>
+    <button style="left: 0px; top: 50px;"
+        onclick="window.location.replace(`../Builder/index.html?id=${new URLSearchParams(window.location.search).get('id')}`)">Edit</button>
+    <button style="left: 0px; top: 150px;" onclick="AStar()" class="pathfindButton">A*</button>
+    <button style="left: 0px; top: 200px;" onclick="dijkstra();" class="pathfindButton">Dijkstra</button>
+    <button style="left: 0px; top: 250px;" onclick="DFS();" class="pathfindButton">DFS</button>
+    <button style="left: 0px; top: 450px;" onclick="location.reload();">Clear</button>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+<script src="./index.js"></script>
+<script src="./mazeGraphics.js"></script>
+<script src="./nodeGraphics.js"></script>
+<script src="./DFSGraphics.js"></script>
+<script src="./dijkstraGraphics.js"></script>
+<script src="./AStar.js"></script>
+<script src="./AStarGraphics.js"></script>
+<script src="./mouseController.js"></script>
+<script src="./nodeFormatter.js"></script>
+<script src="./dijkstra.js"></script>
+<script src="./AStar.js"></script>
+<script src="./DFS.js"></script>
+
+</html>
